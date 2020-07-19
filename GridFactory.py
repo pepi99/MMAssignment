@@ -19,6 +19,7 @@ class GridFactory:
         return self.grid
 
     def create_grid(self, grid):
+        # Creates a grid of cells with color information.
         for i in range(0, self.y):
             for j in range(0, self.x):
                 grid[i][j] = Cell(grid[i][j])

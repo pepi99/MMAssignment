@@ -59,9 +59,10 @@ class Grid:
                     if not (green_neighbours == 2 or green_neighbours == 3 or green_neighbours == 6):  # Condition 3
                         self.grid[i, j].set_next_color(0)  # Change to red
                     # Condition 4 needs no more programming
-        self.color_grid()
+        self.color_grid() # Colors the grid with the next colors
 
     def color_grid(self):
+        # Colors every cell if it has non-None next color.
         for i in range(0, self.y):  # Iterate over rows
             for j in range(0, self.x):  # Iterate over columns
                 cell = self.grid[i, j]
